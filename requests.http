@@ -1,0 +1,25 @@
+### Health check
+GET http://127.0.0.1:8000/
+
+### List users
+GET http://127.0.0.1:8000/users
+
+### Create user
+POST http://127.0.0.1:8000/users
+Content-Type: application/json
+
+{
+  "name": "Lucas",
+  "email": "lucas@email.com"
+}
+
+
+###Create Login
+POST http://127.0.0.1:8000/login
+Content-Type: application/json
+
+{
+  "username": "lucas@email.com",
+  "password": "Teste@123",
+  "user_id": "1"
+}
